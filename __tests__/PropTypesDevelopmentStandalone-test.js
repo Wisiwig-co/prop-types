@@ -118,7 +118,7 @@ describe('PropTypesDevelopmentStandalone', () => {
 
   describe('checkPropTypes', () => {
     it('should warn for invalid validators', () => {
-      spyOn(console, 'error')
+      spyOn(console, 'error');
       const propTypes = { foo: undefined };
       const props = { foo: 'foo' };
       PropTypes.checkPropTypes(
@@ -158,7 +158,7 @@ describe('PropTypesDevelopmentStandalone', () => {
 
     describe('checkPropTypes.resetWarningCache', () => {
       it('should reset warning cache', () => {
-        spyOn(console, 'error')
+        spyOn(console, 'error');
         const propTypes = { foo: undefined };
         const props = { foo: 'foo' };
         PropTypes.checkPropTypes(
@@ -1485,7 +1485,7 @@ Valid keys: [
         PropTypes.oneOfType([() => new Error('hi')]),
         {},
         'Warning: Failed prop type: Invalid prop `testProp` supplied to `testComponent`.'
-      )
+      );
     });
   });
 

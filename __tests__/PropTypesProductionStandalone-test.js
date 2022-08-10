@@ -355,7 +355,7 @@ Valid keys: [
         PropTypes.oneOfType([() => new Error('hi')]),
         {},
         'Warning: Failed prop type: Invalid prop `testProp` supplied to `testComponent`.'
-      )
+      );
     });
   });
 

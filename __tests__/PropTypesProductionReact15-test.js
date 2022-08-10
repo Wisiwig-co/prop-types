@@ -1132,7 +1132,7 @@ describe('PropTypesProductionReact15', () => {
       expectNoop(
         PropTypes.oneOfType([() => new Error('hi')]),
         {}
-      )
+      );
     });
   });
 

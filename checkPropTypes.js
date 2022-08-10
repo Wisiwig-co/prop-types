@@ -98,6 +98,6 @@ checkPropTypes.resetWarningCache = function() {
   if (process.env.NODE_ENV !== 'production') {
     loggedTypeFailures = {};
   }
-}
+};
 
 module.exports = checkPropTypes;
